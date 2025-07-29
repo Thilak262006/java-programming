@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ip = new Scanner(System.in);
+        float a=ip.nextFloat();
+        System.out.printf("%.6f",a);
+        System.out.println();
+        System.out.printf("%.4f",a);
+        System.out.println();
+        System.out.printf("%.2f",a);
+        System.out.println();
+        System.out.println((int)Math.round(a));
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

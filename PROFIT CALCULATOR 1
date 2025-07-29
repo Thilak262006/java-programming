@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ip = new Scanner(System.in);
+        int sold=ip.nextInt();
+        int copy = ip.nextInt();
+        int newspaper = ip.nextInt();
+        
+        int sales = sold * copy;
+        int spent = (sold * newspaper) + 100;
+        float profit = sales - spent;
+        
+        System.out.println("Number of copies sold:"+ sold);
+        System.out.println("Cost of each copy:"+ copy);
+        System.out.println("Cost spent by agency on each newspaper:"+ newspaper);
+        System.out.printf("The profit obtained is Rs.%.2f",profit);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

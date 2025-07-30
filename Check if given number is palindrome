@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ip = new Scanner(System.in);
+        String str = ip.nextLine();
+        int n=str.length(),f=0;
+        if(n == 3)
+        {
+            for(int i=0;i<=n/2;i++)
+            {
+                if(str.charAt(i) != str.charAt(n-1-i))
+                {
+                    f=1;
+                    break;
+                }
+            }
+            if(f == 0)
+            {
+            System.out.println("palindrome");
+            }
+            else
+            {
+                System.out.println("not palindrome");
+            }
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

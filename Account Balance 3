@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ip = new Scanner(System.in);
+        int acc = ip.nextInt();
+        int ch = ip.nextInt();
+        switch(ch)
+        {
+            case 1: int a=ip.nextInt();
+                     System.out.println(acc + a);
+                    break;
+            case 2: int b = ip.nextInt();
+                    if(b > acc)
+                    {
+                        System.out.println("Insufficient Balance");
+                    }
+                    else
+                    {
+                        System.out.println(acc - b);
+                    }
+                    break;
+            default: System.out.println("Invalid Input");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

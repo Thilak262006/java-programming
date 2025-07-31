@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ip = new Scanner(System.in);
+        long n = ip.nextLong();
+        if(n > 0 && n>9)
+        {
+            while(n>0)
+            {
+                System.out.print(n%10);
+                n/=10;
+            }
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ip = new Scanner(System.in);
+        int n=ip.nextInt();
+        int c=n,digit=0;
+        while(c > 0)
+        {
+            digit += c%10;
+            c/=10;
+        }
+        if(n%digit == 0)
+        {
+            System.out.println("Harshad Number");
+        }
+        else
+        {
+            System.out.println("Not Harshad Number");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
